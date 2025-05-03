@@ -1,13 +1,8 @@
+mod data_types;
+pub mod functions;
+
 fn main() {
-    let mut x = 5;
-
-    println!("The value of x is {x}");
-
-    x = 6;
-
-    println!("The value of x is {x}");
-
-    const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
-
-    println!("Three hours in seconds is {THREE_HOURS_IN_SECONDS}");
+    data_types::data_types();
+    let x = functions::get_sum_result(1, 2);
+    println!("The sum of 1 and 2 is {}", x);
 }
